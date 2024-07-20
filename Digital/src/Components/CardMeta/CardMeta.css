@@ -1,0 +1,16 @@
+.CardMeta {
+  padding: 1rem;
+  border-top: 1px solid #ddd;
+  background-color: #fff; /* Fundo branco para contraste */
+}
+
+.CardMetaTitle {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.CardMetaDescription {
+  margin: 0.5rem 0 0;
+  color: #555;
+}
