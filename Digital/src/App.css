@@ -9,9 +9,10 @@ html, body {
     display: flex;
     flex-direction: row;
     align-items: center; /* Alinha verticalmente os itens */
+    justify-content: center;
     padding: 10px; /* Ajuste o espaçamento conforme necessário */
     background-color: #f8f9fa; /* Ajuste a cor de fundo conforme necessário */
-    border-bottom: 1px solid #ddd; /* Opcional: adiciona uma borda inferior */
+  
 }
 
 .app {

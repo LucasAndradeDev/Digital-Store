@@ -1,17 +1,4 @@
-// import React from 'react';
-// import { Link } from 'react-router-dom';
 
-// function Navigation() {
-//   return (
-//     <ul>
-//       <li><Link to="/">Home</Link></li>
-//       <li><Link to="/lista-de-produtos">Lista de Produtos</Link></li>
-//       <li><Link to="/produto">Produto</Link></li>
-//     </ul>
-//   );
-// }
-
-// export default Navigation;
 
 import React from 'react';
 import { Link } from 'react-router-dom';

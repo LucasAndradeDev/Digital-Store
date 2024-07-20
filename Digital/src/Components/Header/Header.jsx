@@ -5,7 +5,7 @@ function Header() {
     return (
         <header>
             <SearchInput />
-            <Navigation />
+           
         </header>
     );
 }
