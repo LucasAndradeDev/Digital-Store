@@ -5,13 +5,26 @@ html, body {
     box-sizing: border-box;
 }
 
+.page-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center; /* Alinha verticalmente os itens */
+    padding: 10px; /* Ajuste o espaçamento conforme necessário */
+    background-color: #f8f9fa; /* Ajuste a cor de fundo conforme necessário */
+    border-bottom: 1px solid #ddd; /* Opcional: adiciona uma borda inferior */
+}
+
 .app {
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    min-height: 100vh; /* Garante que o layout ocupe toda a altura da viewport */
 }
 
 .content {
-    flex: 1;
+    flex: 1; /* Permite que o conteúdo ocupe o espaço restante */
     padding: 20px; /* Ajuste conforme necessário */
+}
+
+footer {
+    margin-top: auto; /* Move o rodapé para a parte inferior da página */
 }

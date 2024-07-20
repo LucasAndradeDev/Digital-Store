@@ -1,0 +1,9 @@
+.btn-primary{
+    background-color: #c92071;
+    width: 10rem;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+}

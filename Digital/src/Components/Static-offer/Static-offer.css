@@ -1,31 +1,62 @@
-.StaticOffer{
+.StaticOffer {
     display: flex;
     flex-direction: row;
+    justify-content: center;
     gap: 8rem;
     margin-bottom: 3rem;
+    align-items: center;
 }
 
-.StaticOffer-img{
-    display: flex;
-    flex-direction: column;
-    background-color: #da5e5e;
-    border-radius: 50%;
+.StaticOffer-img {
     position: relative;
-    left: 3rem;
-   
-}
-.Laye{
-    width: 30rem;
-}
-.StaticOffer-text p{
-color: #C92071;
+    width: 35rem; /* Ajuste conforme necessário */
+    height: 35rem; /* Ajuste conforme necessário */
+    overflow: hidden; /* Garante que as imagens não ultrapassem o contêiner */
+
 }
 
-.StaticOffer-text h3{
+.Laye {
+    position: relative;
+    width: 100%; /* Ajusta a largura para ocupar o contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+    top: 0;
+    left: 0;
+    object-fit: cover; /* Ajusta a imagem para cobrir o contêiner sem distorção */
+    right: 10rem;
+    top: 8rem;
+
+}
+
+.Ellipse {
+    position: absolute;
+    width: 82%; /* Ajusta a largura para ocupar o contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+    top: 6rem;
+    left: 4rem;
+    object-fit: cover; /* Ajusta a imagem para cobrir o contêiner sem distorção */
+}
+
+.Ellipse {
+    z-index: 1; /* Garante que a imagem Ellipse fique abaixo da imagem Laye */
+}
+
+.Laye {
+    z-index: 2; /* Garante que a imagem Laye fique acima da imagem Ellipse */
+}
+
+.StaticOffer-text {
+    width: 40%;
+}
+
+.StaticOffer-text .ofert {
+    color: #c92072c9;
+    font-weight: 700;
+}
+
+.StaticOffer-text .text{
+    color: black;
+}
+
+.StaticOffer-text h3 {
     font-size: 3rem;
-}
-
-
-.StaticOffer-text{
-    width: 60%;
 }
