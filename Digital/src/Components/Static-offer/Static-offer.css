@@ -1,0 +1,31 @@
+.StaticOffer{
+    display: flex;
+    flex-direction: row;
+    gap: 8rem;
+    margin-bottom: 3rem;
+}
+
+.StaticOffer-img{
+    display: flex;
+    flex-direction: column;
+    background-color: #da5e5e;
+    border-radius: 50%;
+    position: relative;
+    left: 3rem;
+   
+}
+.Laye{
+    width: 30rem;
+}
+.StaticOffer-text p{
+color: #C92071;
+}
+
+.StaticOffer-text h3{
+    font-size: 3rem;
+}
+
+
+.StaticOffer-text{
+    width: 60%;
+}
