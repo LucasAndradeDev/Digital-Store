@@ -1,24 +1,23 @@
 import React from 'react';
 import { Card } from 'antd';
 import PromotionLabel from '../PromotionLabel/PromotionLabel';
-import './ProductCard.css'; // Importa o CSS específico para o card
+import './ProductCard.css';
+import cardTenis from "../../assets/cardTenis.svg";
+import CardMeta from "../CardMeta/CardMeta"; // Importando corretamente o CardMeta
 
-const { Meta } = Card;
-
-const ProductCard = () => (
-  <div style={{ position: 'relative', width: 240 }}>
+const ProductCard = ({ width = 260, height = 'auto' }) => (
+  <div className="product-card-container" style={{ width }}>
     <Card
       hoverable
-      cover={<img alt="Tênis adidas Grand Court 2.0" src="https://imgcentauro-a.akamaihd.net/1366x1366/97360651.jpg" />}
+      className="product-card"
+      style={{ height }} // Corrigido: `height` agora é uma prop
+      cover={<img alt="Tênis adidas Grand Court 2.0" src={cardTenis} className='cardTenis' />}
     >
       <div className="ProductCardPromotionLabel">
         <PromotionLabel />
       </div>
-      <Meta
-        title="Tênis adidas Grand Court 2.0 - Feminino"
-        description={<span><s>R$ 349,99</s> R$ 279,99</span>}
-      />
     </Card>
+    <CardMeta /> 
   </div>
 );
 

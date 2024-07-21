@@ -1,11 +1,14 @@
 import React from 'react';
-import { Meta } from 'antd';
+import './CardMeta.css'; // Certifique-se de importar o CSS corretamente
 
-const CardMeta = ({ title, description }) => (
-  <Meta
-    title={title}
-    description={description}
-  />
-);
+function CardMeta() {
+  return (
+    <div className="CardMeta">
+      <p className="CardMeta-Product">Tênis</p>
+      <h3 className="CardMeta-nameProduct">K-Swiss V8 - Masculino</h3>
+      <p className="CardMeta-Price"><s>200</s> <strong>100</strong></p>
+    </div>
+  );
+}
 
 export default CardMeta;
