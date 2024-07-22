@@ -1,0 +1,117 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.page-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background-color: #f8f9fa;
+}
+
+.app {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    align-items: center; /* Centraliza verticalmente o conteúdo */
+    justify-content: center; /* Centraliza horizontalmente o conteúdo */
+}
+
+.totalCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza o conteúdo horizontalmente */
+    width: 80%; /* Ajuste conforme necessário */
+    max-width: 1200px; /* Define uma largura máxima para evitar que o layout fique muito largo */
+}
+
+.cardTitle {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 93%;
+    padding: 1rem;
+    box-sizing: border-box;
+    position: relative;
+    right: 2.5rem;
+    top: 1rem;
+}
+
+.cardTitle p {
+    position: relative;
+    top: 0.3rem;
+    color: #c92071;
+}
+
+.cardContent {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    width: 100%;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+/* Media Queries para Responsividade */
+
+@media (max-width: 1200px) {
+    .totalCard {
+        width: 90%;
+    }
+    .cardTitle {
+        width: 100%;
+        right: 0; /* Remove o deslocamento para a direita em telas menores */
+    }
+}
+
+@media (max-width: 768px) {
+    .cardTitle {
+        flex-direction: row;
+        align-items: flex-start; /* Alinha o conteúdo ao início em telas menores */
+        padding: 0.5rem;
+    }
+
+    .cardTitle h3 {
+        font-size: 1.5rem; /* Ajusta o tamanho da fonte em telas menores */
+    }
+
+    .cardTitle p {
+        font-size: 0.9rem; /* Ajusta o tamanho da fonte em telas menores */
+    }
+
+    .cardContent {
+        gap: 1rem;
+        padding: 0.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .totalCard {
+        width: 100%;
+    }
+
+    .cardTitle h3 {
+        font-size: 1.2rem; /* Ajusta o tamanho da fonte em telas muito pequenas */
+    }
+
+    .cardTitle p {
+        font-size: 0.8rem; /* Ajusta o tamanho da fonte em telas muito pequenas */
+    }
+
+    .cardContent {
+        gap: 0.75rem;
+        padding: 0.25rem;
+    }
+}

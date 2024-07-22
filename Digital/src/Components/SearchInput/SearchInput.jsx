@@ -1,3 +1,4 @@
+import React from 'react';
 import './SearchInput.css';
 
 function SearchInput() {
@@ -6,11 +7,11 @@ function SearchInput() {
             <input
                 type="text"
                 className="search-input"
-                placeholder="Search..."
+                placeholder="Perquisar produto..."
             />
-            <button className="search-button">
+            {/* <button className="search-button">
                 <i className="fa fa-search"></i>
-            </button>
+            </button> */}
         </div>
     );
 }

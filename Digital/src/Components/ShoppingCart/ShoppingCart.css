@@ -1,0 +1,21 @@
+
+
+.shoppingCart {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.shoppingCartIcon {
+    width: 40px; /* Ajuste conforme necessário */
+    height: auto;
+}
+
+.cartCount {
+    position: absolute;
+    bottom: 0.9rem;
+    left: 1.6rem;
+    color: white;
+    font-weight: 700;
+}
+    

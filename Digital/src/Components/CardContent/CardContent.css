@@ -1,0 +1,30 @@
+/* CSS para CardContent */
+.cardContent {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    width: 100%;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+/* Ajustes responsivos para CardContent */
+@media (max-width: 1200px) {
+    .cardContent {
+        gap: 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .cardContent {
+        gap: 1rem;
+        padding: 0.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .cardContent {
+        gap: 0.75rem;
+        padding: 0.25rem;
+    }
+}

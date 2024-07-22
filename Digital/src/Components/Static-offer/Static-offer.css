@@ -1,50 +1,46 @@
+/* Estilo do StaticOffer */
 .StaticOffer {
+    position: relative;
     display: flex;
     flex-direction: row;
     justify-content: center;
     gap: 8rem;
     margin-bottom: 3rem;
     align-items: center;
+    background-color: white;
 }
 
+/* Estilo da imagem StaticOffer */
 .StaticOffer-img {
     position: relative;
-    width: 35rem; /* Ajuste conforme necessário */
-    height: 35rem; /* Ajuste conforme necessário */
+    width: 35rem;
+    height: 35rem;
     overflow: hidden; /* Garante que as imagens não ultrapassem o contêiner */
-
 }
 
 .Laye {
-    position: relative;
-    width: 100%; /* Ajusta a largura para ocupar o contêiner */
-    height: auto; /* Mantém a proporção da imagem */
-    top: 0;
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: 8rem;
     left: 0;
     object-fit: cover; /* Ajusta a imagem para cobrir o contêiner sem distorção */
-    right: 10rem;
-    top: 8rem;
-
+    z-index: 2;
 }
 
 .Ellipse {
     position: absolute;
-    width: 82%; /* Ajusta a largura para ocupar o contêiner */
-    height: auto; /* Mantém a proporção da imagem */
+    width: 82%;
+    height: auto;
     top: 6rem;
     left: 4rem;
-    object-fit: cover; /* Ajusta a imagem para cobrir o contêiner sem distorção */
+    object-fit: cover;
+    z-index: 1;
 }
 
-.Ellipse {
-    z-index: 1; /* Garante que a imagem Ellipse fique abaixo da imagem Laye */
-}
-
-.Laye {
-    z-index: 2; /* Garante que a imagem Laye fique acima da imagem Ellipse */
-}
-
+/* Estilo do texto StaticOffer */
 .StaticOffer-text {
+    position: relative;
     width: 40%;
 }
 
@@ -53,10 +49,11 @@
     font-weight: 700;
 }
 
-.StaticOffer-text .text{
+.StaticOffer-text .text {
     color: black;
 }
 
 .StaticOffer-text h3 {
     font-size: 3rem;
 }
+

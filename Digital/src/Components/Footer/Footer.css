@@ -1,13 +1,14 @@
 .footer {
     background: #1f1f1f;
     width: 100%;
+    
     /* Adicione padding ou margens conforme necessário */
 }
 
 .footer .footer-row {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     gap: 3.5rem;
     padding: 60px;
 }

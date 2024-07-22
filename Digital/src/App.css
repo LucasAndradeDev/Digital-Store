@@ -5,20 +5,31 @@ html, body {
     box-sizing: border-box;
 }
 
-.page-header {
-    display: flex;
-    flex-direction: row;
-    align-items: center; /* Alinha verticalmente os itens */
-    justify-content: center;
-    padding: 10px; /* Ajuste o espaçamento conforme necessário */
-    background-color: #f8f9fa; /* Ajuste a cor de fundo conforme necessário */
-  
-}
-
 .app {
     display: flex;
     flex-direction: column;
     min-height: 100vh; /* Garante que o layout ocupe toda a altura da viewport */
+}
+
+.page-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background-color: #ffffff;
+    box-sizing: border-box;
+}
+
+.logo {
+    margin-right: 2rem; /* Ajuste o espaço à direita da logo conforme necessário */
+   
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 }
 
 .content {

@@ -1,0 +1,50 @@
+/* Header.css */
+
+/* Estilização do Header */
+.page-header {
+    width: 100%;
+    background-color: #ffffff;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+/* Container para a parte superior do Header */
+.header-top {
+    display: flex;
+    flex-direction: row; /* Garante que os itens fiquem em linha */
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto; /* Centraliza o container dentro do header */
+    box-sizing: border-box;
+    position: relative;
+    padding-top: 1rem;
+}
+
+.header-inputlogo{
+display: flex;
+flex-direction: row;
+gap: 5rem;
+position: relative;
+right: 14.5rem;
+}
+
+.first-button{
+    background-color: aqua;
+}
+
+/* Estilização da Logo */
+
+/* Container para ações do Header (Botões e Carrinho) */
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 1rem; /* Espaçamento entre os itens */
+}
+
+/* Ajustes específicos para o SearchInput */
+.search-input {
+    margin-right: 2rem; /* Ajusta o espaçamento à direita do campo de pesquisa */
+}

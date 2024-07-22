@@ -22,7 +22,10 @@ function StaticOffer() {
           repudiandae incidunt nam quos, provident, quod necessitatibus ea
           reprehenderit porro soluta quis! Dicta accusantium eaque sit.
         </p>
+        <div className="StaticOffer-Button">
         <Button/>
+        </div>
+        
       </div>
     </div>
   );
