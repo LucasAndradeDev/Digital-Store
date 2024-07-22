@@ -9,9 +9,9 @@ function SearchInput() {
                 className="search-input"
                 placeholder="Perquisar produto..."
             />
-            {/* <button className="search-button">
+            <button className="search-button">
                 <i className="fa fa-search"></i>
-            </button> */}
+            </button>
         </div>
     );
 }

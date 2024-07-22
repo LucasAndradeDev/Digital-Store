@@ -8,13 +8,14 @@
     margin-bottom: 3rem;
     align-items: center;
     background-color: white;
+    width: 88rem;
 }
 
 /* Estilo da imagem StaticOffer */
 .StaticOffer-img {
     position: relative;
-    width: 35rem;
-    height: 35rem;
+    width: 30rem;
+    height: 30rem;
     overflow: hidden; /* Garante que as imagens não ultrapassem o contêiner */
 }
 
@@ -41,7 +42,7 @@
 /* Estilo do texto StaticOffer */
 .StaticOffer-text {
     position: relative;
-    width: 40%;
+    width: 38%;
 }
 
 .StaticOffer-text .ofert {

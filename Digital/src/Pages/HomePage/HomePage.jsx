@@ -1,12 +1,13 @@
 import React from "react";
 import ProductCard from "../../Components/ProductCard/ProductCard";
-import CardContent from "../../Components/CardContent/CardContent"; // Importa o componente
 import StaticOffer from "../../Components/Static-offer/Static-offer";
+import FeaturedCollectionsSession from "../../Components/FeaturedCollectionsSession/FeaturedCollectionsSession";
 import "../HomePage/HomePage.css";
 
 function HomePage() {
   return (
     <div>
+      <FeaturedCollectionsSession />
       <div className="totalCard">
         <div className="cardTitle">
           <h3>Produtos em alta</h3>

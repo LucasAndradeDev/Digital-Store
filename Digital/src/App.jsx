@@ -9,14 +9,27 @@ import './App.css';
 function App() {
   return (
     <div className="app">
-      <header className='page-header'>
-        <Header />
-      </header>
+      <header className='header'>
+      <div className='page-header'>
+        <Header/>
+      </div>
+
+      <div className='nav-header'>
       <Navigation />
+      </div>
+      
+      </header>
+      
+
+
       <div className="content">
         <AppRoutes />
       </div>
+
+      <footer>
       <Footer />
+      </footer>
+     
     </div>
   );
 }
