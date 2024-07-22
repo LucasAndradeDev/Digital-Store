@@ -68,12 +68,12 @@ function Filter() {
 
                 {/* Filtrar por Estado */}
                 <h6 className="opcfilter">Estado</h6>
-                <div>
-                    <input type="checkbox" id="condition-new" className="estado" />
+                <div >
+                    <input type="checkbox" id="condition-new" className="esta" />
                     <label htmlFor="condition-new">Novo</label>
                 </div>
                 <div>
-                    <input type="checkbox" id="condition-used" className="estado" />
+                    <input type="checkbox" id="condition-used" className="esta" />
                     <label htmlFor="condition-used">Usado</label>
                 </div>
             </form>
