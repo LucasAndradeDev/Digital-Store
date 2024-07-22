@@ -1,0 +1,41 @@
+/* styles.css */
+
+.filter > form > div > input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+}
+
+.filter > form > div > input[type="checkbox"]:checked {
+    background-color: #c92071;
+}
+
+.filter > form > div > input[type="checkbox"]::before {
+    content: '';
+    display: block;
+    width: 14px;
+    height: 14px;
+    margin: 3px;
+    border-radius: 2px;
+    background-color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+.filter > form > div > input[type="checkbox"]:checked::before {
+    background-color: #fff;
+}
+
+.opcfilter {
+    padding-top: 2rem;
+}
+
+.estado {
+    border-radius: 50%;
+}
