@@ -1,13 +1,15 @@
 import React from "react";
 import ProductCard from "../../Components/ProductCard/ProductCard";
-import StaticOffer from "../../Components/Static-offer/Static-offer";
+import StaticOffer from "../../Components/Static-offer/Static-offer"; // Corrigido para a importação correta
 import FeaturedCollectionsSession from "../../Components/FeaturedCollectionsSession/FeaturedCollectionsSession";
 import PromotionBanner from "../../Components/PromotionBanner/PromotionBanner";
+import CarouselHomePage from "../../Components/CarouselHomePage/CarouselHomePage";
 import "./HomePage.css"; // Corrigido para a importação correta
 
 function HomePage() {
   return (
     <div>
+      <CarouselHomePage />
       <PromotionBanner />
       <FeaturedCollectionsSession />
       <div className="totalCard">

@@ -1,0 +1,27 @@
+#carouselExampleIndicators{
+    position: relative;
+    bottom: 1.1rem;
+}
+
+li::marker{
+    font-size: 0;
+}
+
+.carousel-caption {
+    position: absolute;
+    bottom: 20px;
+    left: 15px;
+    right: 15px;
+    padding: 20px;
+    color: #fff; /* Cor do texto */
+    text-align: center;
+  }
+  
+  .carousel-caption h5 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .carousel-caption p {
+    font-size: 1rem;
+  }
