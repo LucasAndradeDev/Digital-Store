@@ -29,14 +29,8 @@
 
 .Session > div > .calca img {
     transition: transform 0.3s ease;
-}
-
-
-.Session > div > .calca img {
     width: 4rem; /* Tamanho padrão */
 }
-
-
 
 .Session > div > .bone {
     width: 4.5rem;
@@ -46,3 +40,5 @@
 .Session > div > .bone:hover {
     filter: brightness(0) saturate(100%) invert(23%) sepia(74%) saturate(2536%) hue-rotate(310deg) brightness(88%) contrast(99%);
 }
+
+

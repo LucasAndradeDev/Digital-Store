@@ -2,11 +2,13 @@ import React from "react";
 import ProductCard from "../../Components/ProductCard/ProductCard";
 import StaticOffer from "../../Components/Static-offer/Static-offer";
 import FeaturedCollectionsSession from "../../Components/FeaturedCollectionsSession/FeaturedCollectionsSession";
-import "../HomePage/HomePage.css";
+import PromotionBanner from "../../Components/PromotionBanner/PromotionBanner";
+import "./HomePage.css"; // Corrigido para a importação correta
 
 function HomePage() {
   return (
     <div>
+      <PromotionBanner />
       <FeaturedCollectionsSession />
       <div className="totalCard">
         <div className="cardTitle">

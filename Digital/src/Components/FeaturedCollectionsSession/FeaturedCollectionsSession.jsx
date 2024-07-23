@@ -9,7 +9,7 @@ import "./FeaturedCollectionsSession.css";
 function FeaturedCollectionsSession() {
     useEffect(() => {
         const objects = document.querySelectorAll('.Session object');
-        
+
         objects.forEach(object => {
             object.addEventListener('load', () => {
                 const svgDoc = object.contentDocument;
@@ -30,24 +30,24 @@ function FeaturedCollectionsSession() {
 
     return (
         <div className="Session">
-            <div className="camiseta">
+            <div className="item">
                 <object type="image/svg+xml" data={camiseta} className='camiseta'>Camiseta</object>
                 <h6 style={{ position: 'relative', top: '1.2rem' }}>Camiseta</h6>
             </div>
-            <div className="calca" >
-                <object type="image/svg+xml" data={calca} style={{width: '5rem'}}>Calça</object>
+            <div className="item">
+                <object type="image/svg+xml" data={calca} style={{ width: '5rem' }}>Calça</object>
                 <h6 style={{ position: 'relative', top: '0.3rem' }}>Calça</h6>
             </div>
-            <div className="bone">
-                <object type="image/svg+xml" data={bone} className='bone' >Boné</object>
+            <div className="item">
+                <object type="image/svg+xml" data={bone} className='bone'>Boné</object>
                 <h6 style={{ position: 'relative', top: '0.6rem' }}>Boné</h6>
             </div>
-            <div className="headphone">
-                <object type="image/svg+xml" data={headphone} style={{width: '5rem'}}>Headphone</object>
+            <div className="item">
+                <object type="image/svg+xml" data={headphone} style={{ width: '5rem' }}>Headphone</object>
                 <h6 style={{ position: 'relative', top: '0.3rem' }}>Headphone</h6>
             </div>
-            <div className="tenis">
-                <object type="image/svg+xml" data={tenis} style={{width: '5rem' , fill: '#099000'}}>Tênis</object>
+            <div className="item">
+                <object type="image/svg+xml" data={tenis} style={{ width: '5rem', fill: '#099000' }}>Tênis</object>
                 <h6 style={{ position: 'relative', top: '0.3rem' }}>Tênis</h6>
             </div>
         </div>
