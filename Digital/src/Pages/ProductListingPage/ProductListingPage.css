@@ -5,6 +5,7 @@ html, body {
     box-sizing: border-box;
 }
 
+
 .page-header {
     display: flex;
     flex-direction: row;
@@ -30,10 +31,11 @@ html, body {
 
 .totalCard {
     display: flex;
-    flex-direction: column;
+    flex-direction: column; 
     align-items: center; /* Centraliza o conteúdo horizontalmente */
     width: 80%; /* Ajuste conforme necessário */
-    max-width: 1200px; /* Define uma largura máxima para evitar que o layout fique muito largo */
+    max-width: 1200px; /* Define uma largura máxima */
+    margin: 0 auto; /* Centraliza o totalCard horizontalmente */
 }
 
 .cardTitle {
@@ -41,27 +43,32 @@ html, body {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    width: 93%;
+    width: 95%; /* Corrigido para garantir que ocupe toda a largura disponível */
     padding: 1rem;
     box-sizing: border-box;
+    margin-bottom: 1rem; /* Adicionado para separar o título do conteúdo */
+}
+
+.cardTitle h3 {
+    margin: 0; /* Remove margens para garantir o alinhamento correto */
     position: relative;
-    right: 2.5rem;
-    top: 1rem;
+    bottom: 0,5rem;
 }
 
 .cardTitle p {
-    position: relative;
-    top: 0.3rem;
     color: #c92071;
 }
 
-.cardContent {
+
+.ListingPage-CardContent {
     display: flex;
     flex-wrap: wrap;
-    gap: 2rem;
+    gap: 1.5rem; /* Reduzido para melhor visualização em telas menores */
     width: 100%;
     padding: 1rem;
     box-sizing: border-box;
+    align-items: center;
+    justify-content: center; /* Centraliza o conteúdo dentro de cardContent */
 }
 
 /* Media Queries para Responsividade */
@@ -71,16 +78,17 @@ html, body {
         width: 90%;
     }
     .cardTitle {
-        width: 100%;
-        right: 0; /* Remove o deslocamento para a direita em telas menores */
+        padding: 0.75rem;
+        width: 85%;
     }
 }
 
 @media (max-width: 768px) {
     .cardTitle {
-        flex-direction: row;
         align-items: flex-start; /* Alinha o conteúdo ao início em telas menores */
         padding: 0.5rem;
+        margin-bottom: 0.5rem; /* Adicionado para ajustar o espaço abaixo do título */
+        width: 65%;
     }
 
     .cardTitle h3 {
@@ -91,9 +99,9 @@ html, body {
         font-size: 0.9rem; /* Ajusta o tamanho da fonte em telas menores */
     }
 
-    .cardContent {
-        gap: 1rem;
+    .HomePage-CardContent {
         padding: 0.5rem;
+        gap: 1rem; /* Ajusta o espaço entre os cards em telas menores */
     }
 }
 
@@ -110,8 +118,7 @@ html, body {
         font-size: 0.8rem; /* Ajusta o tamanho da fonte em telas muito pequenas */
     }
 
-    .cardContent {
-        gap: 0.75rem;
-        padding: 0.25rem;
+    .HomePage-CardContent {
+        gap: 0.75rem; /* Ajusta o espaço entre os cards em telas muito pequenas */
     }
 }
