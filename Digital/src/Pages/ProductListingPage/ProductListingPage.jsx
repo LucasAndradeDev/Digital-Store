@@ -13,16 +13,34 @@
 
 import React from 'react';
 import ProductCard from '../../Components/ProductCard/ProductCard';
+import "./ProductListingPage.css";
+import Filter from "../../Components/Filter/Filter"
+
+// const ProductListingPage = () => {
+//   return (
+//     <div style={{ display: 'flex', flexWrap: 'wrap', gap: '16px' }}>
+//       <ProductCard />
+//       <ProductCard />
+//       <ProductCard />
+//       {/* Adicione mais ProductCard conforme necessário */}
+//     </div>
+//   );
+// };
+
+// export default ProductListingPage;
+
 
 const ProductListingPage = () => {
-  return (
-    <div style={{ display: 'flex', flexWrap: 'wrap', gap: '16px' }}>
-      <ProductCard />
-      <ProductCard />
-      <ProductCard />
-      {/* Adicione mais ProductCard conforme necessário */}
-    </div>
-  );
+    return (
+            <div style={{ display: 'flex', flexWrap: 'wrap', gap: '16px', flexGrow: 1 }}>
+                <Filter/>
+                <ProductCard />
+                <ProductCard />
+                <ProductCard />
+                {/* Adicione mais ProductCard conforme necessário */}
+            </div>
+       
+    );
 };
 
 export default ProductListingPage;

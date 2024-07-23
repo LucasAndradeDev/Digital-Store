@@ -1,0 +1,22 @@
+/* styles.css */
+form{
+    margin-right: 3rem;    
+}
+
+.filter > form > div > input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+    accent-color: #c92071;
+
+}
+
+.opcfilter {
+    padding-top: 2rem;
+}
+.esta{
+    border-radius: 100%;
+}
+
+
