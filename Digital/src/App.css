@@ -8,10 +8,59 @@ html, body {
 .app {
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    min-height: 100vh; /* Garante que o layout ocupe toda a altura da viewport */
+    background-color: #f9f8fe;
 }
 
+.all-page{
+    max-width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.header{
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+}
+
+.page-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    position: relative;
+    left: 4rem;
+}
+
+.nav-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    right: 24.6rem;
+   
+}
+
+
+.logo {
+    margin-right: 2rem; /* Ajuste o espaço à direita da logo conforme necessário */
+   
+}
+
+
+
 .content {
-    flex: 1;
+    flex: 1; /* Permite que o conteúdo ocupe o espaço restante */
     padding: 20px; /* Ajuste conforme necessário */
+}
+
+footer {
+    margin-top: auto; /* Move o rodapé para a parte inferior da página */
 }

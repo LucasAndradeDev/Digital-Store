@@ -1,24 +1,29 @@
 import React from 'react';
 import { Card } from 'antd';
+import PromotionLabel from '../PromotionLabel/PromotionLabel';
+import './ProductCard.css';
+import cardTenis from "../../assets/cardTenis.svg";
+import CardMeta from "../CardMeta/CardMeta"; 
 
-const { Meta } = Card;
-
-const ProductCard = () => (
-  <Card
-    hoverable
-    style={{ width: 240 }}
-    cover={<img alt="Tênis adidas Grand Court 2.0" src="https://imgcentauro-a.akamaihd.net/1366x1366/97360651.jpg" />}
-  >
-    <Meta 
-      title="Tênis adidas Grand Court 2.0 - Feminino" 
-      description={
-        <div>
-          <p>www.digitalstore.com</p>
-          <p style={{ fontWeight: 'bold' }}>R$ 279,99</p>
+const ProductCard = ({ width = 260, height = 'auto' }) => (
+  
+  
+  
+    <div className="product-card-container" style={{ width }}>
+    
+      <Card
+        hoverable
+        className="product-card"
+        style={{ height }}
+        cover={<img alt="Tênis adidas Grand Court 2.0" src={cardTenis} className='cardTenis' />}
+      >
+        <div className="ProductCardPromotionLabel">
+          <PromotionLabel />
         </div>
-      } 
-    />
-  </Card>
+      </Card>
+      <CardMeta />
+    </div>
+ 
 );
 
 export default ProductCard;

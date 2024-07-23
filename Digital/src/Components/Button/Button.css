@@ -1,0 +1,17 @@
+.custom-button-wrapper .btn-primary {
+    background-color: #c92071;
+    width: 10rem;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+}
+
+
+
+
+.custom-button-wrapper .btn-primary:hover{
+    background-color: #a1004e;
+    
+}

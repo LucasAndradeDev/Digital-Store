@@ -1,0 +1,44 @@
+.Session {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.Session > div {
+    flex: 1;
+    text-align: center;
+    margin: 0;
+    max-width: 9rem;
+}
+
+.Session > div > h6 {
+    color: #474747;
+}
+
+.Session > div > .camiseta {
+    width: 3.1rem;
+    position: relative;
+    top: 0.1rem;
+}
+
+.Session > div > .camiseta > h6 {
+    position: relative;
+    top: 10rem;
+}
+
+.Session > div > .calca img {
+    transition: transform 0.3s ease;
+    width: 4rem; /* Tamanho padrão */
+}
+
+.Session > div > .bone {
+    width: 4.5rem;
+    filter: brightness(0) saturate(100%) invert(63%) sepia(0%) saturate(0%) hue-rotate(192deg) brightness(91%) contrast(85%);
+}
+
+.Session > div > .bone:hover {
+    filter: brightness(0) saturate(100%) invert(23%) sepia(74%) saturate(2536%) hue-rotate(310deg) brightness(88%) contrast(99%);
+}
+
+

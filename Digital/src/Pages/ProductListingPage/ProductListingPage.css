@@ -1,1 +1,59 @@
+.listingPage{
+  display: flex;
+  flex-direction: column;
+}
+
+.listingPage span p{
+  width: 100%;
+  position: relative;
+  left: 1.3rem;
+  top: 2rem;
+  
+}
+
+.mainLP{
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  bottom: 3rem;
+}
+
+
+.product-listing-page {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 1rem;
+  width: 100%;
+}
+
+.listing-page-card-content {
+  width: 850px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  align-items: center;
+  justify-content: flex-end;
+  position: relative;
+  padding-bottom: 10rem;
+  top: 5rem;
+}
+
+.filtro{
+  position: relative;
+  top: 2.2rem;
+}
+
+/* Regras de media queries para responsividade */
+@media (max-width: 1200px) {
+  .listing-page-card-content {
+    margin-left: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .listing-page-card-content {
+    margin-left: 1rem;
+  }
+}
 

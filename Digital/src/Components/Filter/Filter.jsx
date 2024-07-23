@@ -4,12 +4,11 @@ import "./Filter.css"; // Importa o arquivo CSS para estilização
 function Filter() {
     return (
         <div className="filter">
-            <h3>Filtrar por</h3>
-            <br />
-
-            {/* Filtrar por Marcas */}
-            <h5>Marcas</h5>
+            <h5>Filtrar por</h5>
+            <hr />
             <form>
+                {/* Filtrar por Marcas */}
+                <h6>Marcas</h6>
                 <div>
                     <input type="checkbox" id="brand-adidas" />
                     <label htmlFor="brand-adidas">Adidas</label>
@@ -68,7 +67,7 @@ function Filter() {
 
                 {/* Filtrar por Estado */}
                 <h6 className="opcfilter">Estado</h6>
-                <div >
+                <div>
                     <input type="checkbox" id="condition-new" className="esta" />
                     <label htmlFor="condition-new">Novo</label>
                 </div>

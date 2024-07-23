@@ -1,0 +1,22 @@
+/* Logo.css */
+.Logotipo {
+    display: flex;
+    align-items: center;
+    gap: 1rem; /* Espaço entre a imagem e o texto */
+}
+
+.Logo-img {
+    width: 40px; /* Ajuste conforme necessário */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+.Logotipo p {
+    font-size: 2rem; /* Ajuste conforme necessário */
+    font-weight: 600;
+    color: #c92071; /* Ajuste conforme necessário */
+    margin: 0; /* Remove margens padrão */
+    position: relative;
+    bottom: 0.1rem;
+    right: 0.3rem;
+  
+}

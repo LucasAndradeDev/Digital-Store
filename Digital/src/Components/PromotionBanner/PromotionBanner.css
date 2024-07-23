@@ -1,0 +1,90 @@
+/* PromotionBanner.css */
+.BannerGroup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 8rem;
+}
+
+.Banner {
+    background-color: #D8E3F2;
+    width: 22rem;
+    height: 13.6rem;
+    padding: 1rem;
+    border-radius: 5px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.Banner img {
+    width: auto;
+    height: auto;
+    max-width: 58%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.Banner h3 {
+    font-size: 1.8rem;
+    width: 12rem;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 4rem;
+    left: 2rem;
+    font-weight: 700;
+}
+
+.Banner span {
+    position: absolute;
+    /* Ajuste a posição do span */
+    top: 1rem; /* Exemplo de ajuste vertical */
+    left: 1rem; /* Exemplo de ajuste horizontal */
+    width: 8rem; /* Ajuste o tamanho do span */
+    height: auto; /* Ajuste a altura conforme necessário */
+}
+
+/* Estilos específicos para o PromotionLabel */
+.promotion-label {
+    width: 100%; /* Ajuste o tamanho do PromotionLabel */
+    height: auto; /* Ajuste a altura conforme necessário */
+    /* Outras propriedades para o PromotionLabel, se necessário */
+}
+
+.btn-shopping {
+    width: 8rem;
+    height: 2.6rem;
+    border: none;
+    border-radius: 8px;
+    background-color: rgb(255, 255, 255);
+    font-weight: 700;
+    font-size: 0.95rem;
+    color: #c92071;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 9.5rem;
+    left: 1.9rem;
+    z-index: 1;
+}
+
+.btn-supreme {
+    position: absolute; /* Permite ajustar a posição em relação ao seu local original */
+    top: 9.5rem; /* Ajusta a posição para cima, altere conforme necessário */
+    left: 1.9rem; /* Ajusta a posição horizontal, altere conforme necessário */
+}
+
+.btn-shopping:hover {
+    width: 8.5rem;
+    height: 2.8rem;
+    top: 9.4rem;
+    left: 1.5rem;
+    background-color: #c92071;
+    color: #ffffff;
+}

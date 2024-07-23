@@ -1,0 +1,82 @@
+/* Header.css */
+
+/* Estilização do Header */
+.page-header {
+    width: 100%;
+    background-color: #ffffff;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+/* Container para a parte superior do Header */
+.header-top {
+    display: flex;
+    flex-direction: row; /* Garante que os itens fiquem em linha */
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto; /* Centraliza o container dentro do header */
+    box-sizing: border-box;
+    position: relative;
+    padding-top: 1rem;
+}
+
+.header-inputlogo {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    position: relative;
+    right: 5.5rem;
+}
+
+.first-button {
+    background-color: #ffffff;
+    width: 10rem;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 2rem;
+    outline: none;
+    position: relative; /* Necessário para posicionar o pseudo-elemento */
+}
+
+.first-button:hover {
+    background-color: #ffffff;
+    text-decoration: none; /* Remove sublinhado padrão */
+    font-weight: 600;
+}
+
+.first-button::after {
+    content: "";
+    position: absolute;
+    left: 36px;
+    bottom: -2px; /* Ajusta a posição vertical do sublinhado */
+    width: 55%;
+    height: 3px; 
+    background-color: transparent; 
+    transition: background-color 0.3s; 
+}
+
+.first-button:hover::after {
+    background-color: rgb(0, 0, 0); /* Cor do sublinhado ao passar o mouse */
+}
+
+/* Estilização da Logo */
+
+/* Container para ações do Header (Botões e Carrinho) */
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 1rem; /* Espaçamento entre os itens */
+    position: relative;
+    right: 10rem;
+}
+
+/* Ajustes específicos para o SearchInput */
+.search-input {
+    margin-right: 2rem; /* Ajusta o espaçamento à direita do campo de pesquisa */
+}

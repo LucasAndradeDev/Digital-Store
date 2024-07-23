@@ -1,0 +1,31 @@
+.product-card-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-meta-container {
+  margin-top: 1rem; 
+}
+
+.cardTenis {
+  width: 100%; /* Ajuste a largura conforme necessário */
+  height: auto; /* Mantém a proporção da imagem */
+  max-width: 240px; /* Define um valor máximo de largura */
+  object-fit: contain; /* Garante que a imagem caiba dentro do contêiner sem distorção */
+  position: relative;
+  top: 2rem;
+  right: 0.5rem;
+}
+
+.ProductCardPromotionLabel {
+  position: absolute;
+  top: 0.3rem;
+  left: 0.3rem;
+}
