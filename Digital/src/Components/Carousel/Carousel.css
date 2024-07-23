@@ -1,0 +1,20 @@
+
+   .carousel-container {
+    width: 60%;
+    margin: auto;
+  }
+  
+  .carousel .slide img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .carousel .thumb {
+    border: 2px solid transparent;
+    margin-top: 10px;
+  }
+  
+  .carousel .thumb.selected, .carousel .thumb:hover {
+    border: 2px solid #000;
+  }
+  
