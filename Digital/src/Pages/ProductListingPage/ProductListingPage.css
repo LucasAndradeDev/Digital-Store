@@ -1,124 +1,59 @@
-html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+.listingPage{
+  display: flex;
+  flex-direction: column;
+}
+
+.listingPage span p{
+  width: 100%;
+  position: relative;
+  left: 1.3rem;
+  top: 2rem;
+  
+}
+
+.mainLP{
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  bottom: 3rem;
 }
 
 
-.page-header {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    padding: 10px;
-    background-color: #f8f9fa;
+.product-listing-page {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 1rem;
+  width: 100%;
 }
 
-.app {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+.listing-page-card-content {
+  width: 850px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  align-items: center;
+  justify-content: flex-end;
+  position: relative;
+  padding-bottom: 10rem;
+  top: 5rem;
 }
 
-.content {
-    flex: 1;
-    padding: 20px;
-    display: flex;
-    align-items: center; /* Centraliza verticalmente o conteúdo */
-    justify-content: center; /* Centraliza horizontalmente o conteúdo */
+.filtro{
+  position: relative;
+  top: 2.2rem;
 }
 
-.totalCard {
-    display: flex;
-    flex-direction: column; 
-    align-items: center; /* Centraliza o conteúdo horizontalmente */
-    width: 80%; /* Ajuste conforme necessário */
-    max-width: 1200px; /* Define uma largura máxima */
-    margin: 0 auto; /* Centraliza o totalCard horizontalmente */
-}
-
-.cardTitle {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    width: 95%; /* Corrigido para garantir que ocupe toda a largura disponível */
-    padding: 1rem;
-    box-sizing: border-box;
-    margin-bottom: 1rem; /* Adicionado para separar o título do conteúdo */
-}
-
-.cardTitle h3 {
-    margin: 0; /* Remove margens para garantir o alinhamento correto */
-    position: relative;
-    bottom: 0,5rem;
-}
-
-.cardTitle p {
-    color: #c92071;
-}
-
-
-.ListingPage-CardContent {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1.5rem; /* Reduzido para melhor visualização em telas menores */
-    width: 100%;
-    padding: 1rem;
-    box-sizing: border-box;
-    align-items: center;
-    justify-content: center; /* Centraliza o conteúdo dentro de cardContent */
-}
-
-/* Media Queries para Responsividade */
-
+/* Regras de media queries para responsividade */
 @media (max-width: 1200px) {
-    .totalCard {
-        width: 90%;
-    }
-    .cardTitle {
-        padding: 0.75rem;
-        width: 85%;
-    }
+  .listing-page-card-content {
+    margin-left: 2rem;
+  }
 }
 
 @media (max-width: 768px) {
-    .cardTitle {
-        align-items: flex-start; /* Alinha o conteúdo ao início em telas menores */
-        padding: 0.5rem;
-        margin-bottom: 0.5rem; /* Adicionado para ajustar o espaço abaixo do título */
-        width: 65%;
-    }
-
-    .cardTitle h3 {
-        font-size: 1.5rem; /* Ajusta o tamanho da fonte em telas menores */
-    }
-
-    .cardTitle p {
-        font-size: 0.9rem; /* Ajusta o tamanho da fonte em telas menores */
-    }
-
-    .HomePage-CardContent {
-        padding: 0.5rem;
-        gap: 1rem; /* Ajusta o espaço entre os cards em telas menores */
-    }
+  .listing-page-card-content {
+    margin-left: 1rem;
+  }
 }
 
-@media (max-width: 480px) {
-    .totalCard {
-        width: 100%;
-    }
-
-    .cardTitle h3 {
-        font-size: 1.2rem; /* Ajusta o tamanho da fonte em telas muito pequenas */
-    }
-
-    .cardTitle p {
-        font-size: 0.8rem; /* Ajusta o tamanho da fonte em telas muito pequenas */
-    }
-
-    .HomePage-CardContent {
-        gap: 0.75rem; /* Ajusta o espaço entre os cards em telas muito pequenas */
-    }
-}

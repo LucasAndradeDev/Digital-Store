@@ -9,6 +9,7 @@ html, body {
     display: flex;
     flex-direction: column;
     min-height: 100vh; /* Garante que o layout ocupe toda a altura da viewport */
+    background-color: #f9f8fe;
 }
 
 .all-page{

@@ -1,7 +1,7 @@
 .CardMeta {
   padding: 1rem;
   border-top: 1px solid #ddd;
-  background-color: #fff;
+  background-color: transparent;
 }
 
 .CardMeta-Product {
