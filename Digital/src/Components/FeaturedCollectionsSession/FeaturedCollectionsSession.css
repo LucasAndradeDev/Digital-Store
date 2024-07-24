@@ -3,6 +3,7 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
 
 .Session > div {
@@ -41,4 +42,26 @@
     filter: brightness(0) saturate(100%) invert(23%) sepia(74%) saturate(2536%) hue-rotate(310deg) brightness(88%) contrast(99%);
 }
 
+.itens {
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+    align-items: center;
+    justify-content: center;
+    padding-top: 1rem;
+    padding-bottom: 4rem;
+}
 
+.session-text h3 {
+    width: auto;
+    white-space: nowrap; /* Impede a quebra de linha */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Estilos para ajustar o tamanho do bone */
+.bone {
+    width: 6rem; /* Ajuste o tamanho conforme necessário */
+    height: auto; /* Mantém a proporção da imagem */
+}

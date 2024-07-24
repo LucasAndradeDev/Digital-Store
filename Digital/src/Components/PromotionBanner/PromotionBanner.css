@@ -88,3 +88,24 @@
     background-color: #c92071;
     color: #ffffff;
 }
+
+
+.BannerText{
+    position:relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   right: 26.6rem;
+   top: 7rem;
+  font-size: 0.9rem; 
+}
+
+.BannerText h3{
+    font-size: 1.6rem;
+}
+
+.BannerContent{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}

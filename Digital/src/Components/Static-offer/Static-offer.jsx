@@ -23,7 +23,24 @@ function StaticOffer() {
           reprehenderit porro soluta quis! Dicta accusantium eaque sit.
         </p>
         <div className="StaticOffer-Button">
-        <Button/>
+        <Button
+            text="Ver Oferta"
+            width="12rem"
+            height="2.6rem"
+            border="none"
+            borderRadius="0.5rem"
+            backgroundColor="#c92071"
+            fontWeight="600"
+            fontSize="0.95rem"
+            color="rgb(255, 255, 255)"
+            position="absolute"
+            top="17rem"
+            right="21.5rem"
+            zIndex="1"
+            hoverColor="#ffffff"
+            hoverFontColor="#c92071"
+            hoverFontSize="1rem"
+          />
         </div>
         
       </div>

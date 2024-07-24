@@ -1,5 +1,5 @@
 import React from "react";
-import "./Filter.css"; // Importa o arquivo CSS para estilização
+import "./Filter.css"; 
 
 function Filter() {
     return (
@@ -29,7 +29,7 @@ function Filter() {
                     <input type="checkbox" id="brand-puma" />
                     <label htmlFor="brand-puma">Puma</label>
                 </div>
-                {/* Adicione mais checkboxes conforme necessário */}
+               
 
                 {/* Filtrar por Categoria */}
                 <h6 className="opcfilter">Categoria</h6>
@@ -65,14 +65,14 @@ function Filter() {
                     <label htmlFor="gender-unisex">Unisex</label>
                 </div>
 
-                {/* Filtrar por Estado */}
+
                 <h6 className="opcfilter">Estado</h6>
-                <div>
-                    <input type="checkbox" id="condition-new" className="esta" />
+                <div className="filterRadio">
+                    <input type="radio" id="condition-new" name="condition" className="esta" />
                     <label htmlFor="condition-new">Novo</label>
                 </div>
-                <div>
-                    <input type="checkbox" id="condition-used" className="esta" />
+                <div className="filterRadio">
+                    <input type="radio" id="condition-used" name="condition" className="esta" />
                     <label htmlFor="condition-used">Usado</label>
                 </div>
             </form>

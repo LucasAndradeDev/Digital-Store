@@ -9,11 +9,10 @@ body, html {
     display: flex;
     justify-content: center; /* Centraliza o conteúdo horizontalmente */
     align-items: center; /* Centraliza o conteúdo verticalmente */
-    padding: 0.5rem 1rem;
     background-color: #ffffff; /* Cor de fundo do navbar */
     border: none;
     position: relative;
-    left: 3rem; /* Ajusta a posição horizontal do navbar */
+    left: 3rem; 
 }
 
 .navbar-expand-lg {

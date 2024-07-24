@@ -46,8 +46,22 @@ form {
     margin-bottom: 1rem;
 }
 
-
-hr{
+hr {
     width: 16rem;
     margin: 0;
+}
+
+.filterRadio {
+    display: flex;
+    padding-top: 0.2rem;
+    flex-direction: row;
+    gap: 0.2rem;
+}
+
+.filterRadio input[type="radio"] {
+    width: 20px; /* Ajuste o tamanho conforme necessário */
+    height: 20px; /* Ajuste o tamanho conforme necessário */
+    margin-right: 10px;
+    cursor: pointer;
+    accent-color: #c92071; /* Cor do rádio quando selecionado */
 }
