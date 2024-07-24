@@ -1,9 +1,9 @@
 import "./Button.css";
 
-function Button() {
+function Button({text}) {
     return (
         <div className="custom-button-wrapper">
-            <a className="btn btn-primary custom-button" href="#" role="button">Link</a>
+            <a className="btn btn-primary custom-button" href="#" role="button">{text}</a>
             
         </div>
     );

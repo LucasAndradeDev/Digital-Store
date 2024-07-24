@@ -34,11 +34,11 @@ const App = () => (
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...</p>
         <div className="product-sizes">
           <label>Tamanho:</label>
-          <button>39</button>
-          <button>40</button>
-          <button>41</button>
-          <button>42</button>
-          <button>43</button>
+          <button className='tam'>39</button>
+          <button className='tam'>40</button>
+          <button className='tam'>41</button>
+          <button className='tam'>42</button>
+          <button className='tam'>43</button>
         </div>
         <div className="product-colors">
           <label>Cor:</label>

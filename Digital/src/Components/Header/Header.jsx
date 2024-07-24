@@ -16,7 +16,7 @@ function Header() {
                 
                 <div className='header-actions'>
                     <button className="first-button">Cadastre-se</button>
-                    <Button />
+                    <Button text={"Entrar"}/>
                     <ShoppingCart />
                 </div>
             </div>

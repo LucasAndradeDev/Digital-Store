@@ -67,6 +67,9 @@
     align-items: center;
     margin-bottom: 10px;
   }
+  .tam:active{
+    background-color:#c92071 ;
+  }
   
   .product-sizes button,
   .color-option {
