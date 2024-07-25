@@ -1,27 +1,49 @@
-#carouselExampleIndicators{
-    position: relative;
-    bottom: 1.1rem;
+#carouselExampleIndicators {
+  position: relative;
+  bottom: 2.5rem;
+  width: 85rem;
+  left: 2rem;
 }
 
-li::marker{
-    font-size: 0;
+li::marker {
+  font-size: 0;
 }
 
 .carousel-caption {
-    position: absolute;
-    bottom: 20px;
-    left: 15px;
-    right: 15px;
-    padding: 20px;
-    color: #fff; /* Cor do texto */
-    text-align: center;
-  }
-  
-  .carousel-caption h5 {
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem;
-  }
-  
-  .carousel-caption p {
-    font-size: 1rem;
-  }
+  position: absolute;
+  bottom: 20px;
+  left: 15px;
+  right: 15px;
+  padding: 20px;
+  color: #fff; /* Cor do texto */
+  text-align: center;
+}
+
+.carousel-caption h5 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.carousel-caption p {
+  font-size: 1rem;
+}
+
+.carousel-item {
+  height: 650px; /* Altura fixa para todos os slides */
+  position: relative;
+}
+
+.carousel-item .background-image {
+  max-height: 100%; /* Garante que as imagens de fundo não excedam a altura do slide */
+}
+
+.foreground-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 10%; /* Reduz a altura da imagem do tênis */
+  max-height: 100%; /* Garante que a imagem não exceda a altura do slide */
+  z-index: 10; /* Define a camada superior */
+  pointer-events: none; /* Garante que a imagem do tênis não interfira na interação com o carrossel */
+}

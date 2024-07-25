@@ -29,21 +29,9 @@ const ProductListingPage = () => {
               paddingBottom: '14rem' // Corrigido para camelCase
             }}
           >
-            <ProductCard width={250} height={270} />
-            <ProductCard width={250} height={270} />
-            <ProductCard width={250} height={270} />
-            <ProductCard width={250} height={270} />
-            <ProductCard width={250} height={270} />
-            <ProductCard width={250} height={270} />
-            <ProductCard width={250} height={270} />
-            <ProductCard width={250} height={270} />
-            <ProductCard width={250} height={270} />
-            <ProductCard width={250} height={270} />
-            <ProductCard width={250} height={270} />
-            <ProductCard width={250} height={270} />
-            <ProductCard width={250} height={270} />
-            <ProductCard width={250} height={270} />
-            <ProductCard width={250} height={270} />
+            {Array.from({ length: 15 }).map((_, index) => (
+        <ProductCard key={index} width={250} height={270} showPromotionLabel={index < 2} />
+      ))}
           </div>
         </div>
     </div>

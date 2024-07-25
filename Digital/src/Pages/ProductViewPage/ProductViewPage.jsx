@@ -64,10 +64,9 @@ const ProductViewPage = () => (
     </main>
     <section className="related-products">
       <h2>Produtos Relacionados</h2>
-      <ProductCard width={250} height={270} />
-      <ProductCard width={250} height={270} />
-      <ProductCard width={250} height={270} />
-      <ProductCard width={250} height={270} />
+      {Array.from({ length: 4 }).map((_, index) => (
+        <ProductCard key={index} width={250} height={270} showPromotionLabel={index < 2} />
+      ))}
     </section>
   </div>
 );

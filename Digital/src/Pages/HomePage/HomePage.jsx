@@ -1,10 +1,10 @@
 import React from "react";
 import ProductCard from "../../Components/ProductCard/ProductCard";
-import StaticOffer from "../../Components/Static-offer/Static-offer"; // Corrigido para a importação correta
+import StaticOffer from "../../Components/Static-offer/Static-offer";
 import FeaturedCollectionsSession from "../../Components/FeaturedCollectionsSession/FeaturedCollectionsSession";
 import PromotionBanner from "../../Components/PromotionBanner/PromotionBanner";
 import CarouselHomePage from "../../Components/CarouselHomePage/CarouselHomePage";
-import "./HomePage.css"; // Corrigido para a importação correta
+import "./HomePage.css"; 
 
 function HomePage() {
   return (
@@ -21,14 +21,9 @@ function HomePage() {
         </div>
 
         <div className="HomePage-CardContent">
-          <ProductCard width={250} height={270} />
-          <ProductCard width={250} height={270} />
-          <ProductCard width={250} height={270} />
-          <ProductCard width={250} height={270} />
-          <ProductCard width={250} height={270} />
-          <ProductCard width={250} height={270} />
-          <ProductCard width={250} height={270} />
-          <ProductCard width={250} height={270} />
+        {Array.from({ length: 8 }).map((_, index) => (
+        <ProductCard key={index} width={250} height={270} showPromotionLabel={index < 2} />
+      ))}
         </div>
       </div>
 
