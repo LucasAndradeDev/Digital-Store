@@ -18,35 +18,32 @@ function Footer() {
                     </div>
                 </div>
                 <div className="footer-col">
-                    <h4>Info</h4>
+                    <h4>Informação</h4>
                     <ul className="links">
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Compressions</a></li>
-                        <li><a href="#">Customers</a></li>
-                        <li><a href="#">Service</a></li>
-                        <li><a href="#">Collection</a></li>
+                        <li><a href="#">Sobre Drip Store</a></li>
+                        <li><a href="#">Segurança</a></li>
+                        <li><a href="#">Wishlist</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Trabalhe conosco</a></li>
+                        <li><a href="#">Meus Pedidos</a></li>
                     </ul>
                 </div>
                 <div className="footer-col">
-                    <h4>Explore</h4>
+                    <h4>Categorias</h4>
                     <ul className="links">
-                        <li><a href="#">Free Designs</a></li>
-                        <li><a href="#">Latest Designs</a></li>
-                        <li><a href="#">Themes</a></li>
-                        <li><a href="#">Popular Designs</a></li>
-                        <li><a href="#">Art Skills</a></li>
-                        <li><a href="#">New Uploads</a></li>
+                        <li><a href="#">Camisetas</a></li>
+                        <li><a href="#">Calças</a></li>
+                        <li><a href="#">Bones</a></li>
+                        <li><a href="#">Headphones</a></li>
+                        <li><a href="#">Tenis</a></li>
                     </ul>
                 </div>
                 <div className="footer-col">
-                    <h4>Legal</h4>
+                    <h4>Contato</h4>
                     <ul className="links">
-                        <li><a href="#">Customer Agreement</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">GDPR</a></li>
-                        <li><a href="#">Security</a></li>
-                        <li><a href="#">Testimonials</a></li>
-                        <li><a href="#">Media Kit</a></li>
+                        <li><a href="#">Av.Santos Dumont, 1510-1
+                            andar -Aldeota,Fortaleza - CE,60150-161</a></li>
+                            <p>(85) 3051-3411</p>
                     </ul>
                 </div>
             </div>
