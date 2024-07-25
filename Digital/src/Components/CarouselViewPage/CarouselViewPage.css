@@ -1,0 +1,36 @@
+.carousel-container {
+    position: relative;
+    width: 53%; /* Ajuste a largura do carrossel conforme necessário */
+    max-width: 1200px; /* Defina um tamanho máximo para o carrossel */
+    height: 600px; /* Ajuste a altura do carrossel conforme necessário */
+    margin: auto;
+    overflow: hidden; /* Garante que o conteúdo não saia dos limites */
+  }
+  
+  .carousel .slide {
+    position: relative;
+    height: 100%; /* Faz com que o slide ocupe toda a altura do contêiner */
+  }
+  
+  .background-image {
+    width: 100%;
+    height: 100%; /* Ajusta a altura da imagem de fundo para preencher o slide */
+    object-fit: cover; /* Garante que a imagem cubra toda a área do slide */
+    z-index: 1; /* Define a camada de fundo */
+  }
+  
+  .foreground-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%; /* Ajuste o tamanho da imagem do tênis conforme necessário */
+    height: auto;
+    z-index: 10; /* Define a camada superior */
+    pointer-events: none; /* Garante que a imagem do tênis não interfira na interação com o carrossel */
+  }
+  
+  .carousel .control-dots .dot.selected, .carousel .control-dots .dot {
+    opacity: 0;
+    filter: alpha(opacity = 0);
+}

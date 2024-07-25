@@ -1,4 +1,3 @@
-// PromotionBanner.js
 import React from "react";
 import "./PromotionBanner.css";
 import PromotionLabel from "../PromotionLabel/PromotionLabel";
@@ -15,9 +14,22 @@ function PromotionBanner() {
       </div>
       <div className="BannerGroup">
         <div className="Banner">
-          <span className="promotion-label-wrapper">
-            <PromotionLabel className="promotion-label" />
-          </span>
+          <PromotionLabel
+            text="30% OFF"
+            backgroundColor="#e7ff86"
+            color="#474747"
+            fontWeight="700"
+            fontSize="0.8rem"
+            position="absolute"
+            top="2rem"
+            left="1.95rem"
+            padding="0.2rem 0.1rem"
+            borderBottomRightRadius="5px"
+            borderRadius="1.2rem"
+            width="5rem"
+            height="1.7rem"
+            zIndex="10"
+          />
           <h3>Novo Drop Supreme</h3>
           <Button
             text="Comprar"
@@ -40,9 +52,22 @@ function PromotionBanner() {
           <img src={supreme} alt="Camisa Supreme" />
         </div>
         <div className="Banner">
-          <span className="promotion-label-wrapper">
-            <PromotionLabel className="promotion-label" />
-          </span>
+          <PromotionLabel
+            text="30% OFF"
+            backgroundColor="#e7ff86"
+            color="#474747"
+            fontWeight="700"
+            fontSize="0.8rem"
+            position="absolute"
+            top="2rem"
+            left="1.95rem"
+            padding="0.2rem 0.1rem"
+            borderBottomRightRadius="5px"
+            borderRadius="1.2rem"
+            width="5rem"
+            height="1.7rem"
+            zIndex="10"
+          />
           <h3>Coleção Adidas</h3>
           <Button
             text="Comprar"
@@ -65,9 +90,22 @@ function PromotionBanner() {
           <img src={tenisBanner} alt="Camisa Adidas" />
         </div>
         <div className="Banner">
-          <span className="promotion-label-wrapper">
-            <PromotionLabel className="promotion-label" />
-          </span>
+          <PromotionLabel
+            text="30% OFF"
+            backgroundColor="#e7ff86"
+            color="#474747"
+            fontWeight="700"
+            fontSize="0.8rem"
+            position="absolute"
+            top="2rem"
+            left="1.95rem"
+            padding="0.2rem 0.1rem"
+            borderBottomRightRadius="5px"
+            borderRadius="1.2rem"
+            width="5rem"
+            height="1.7rem"
+            zIndex="10"
+          />
           <h3>Novo Beats Bass</h3>
           <Button
             text="Comprar"

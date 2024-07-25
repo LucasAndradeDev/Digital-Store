@@ -18,7 +18,22 @@ const ProductCard = ({ width = 260, height = 'auto' }) => (
         cover={<img alt="Tênis adidas Grand Court 2.0" src={cardTenis} className='cardTenis' />}
       >
         <div className="ProductCardPromotionLabel">
-          <PromotionLabel />
+        <PromotionLabel
+            text="30% OFF"
+            backgroundColor="#e7ff86"
+            color="#474747"
+            fontWeight="700"
+            fontSize="0.8rem"
+            position="absolute"
+            top="1rem"
+            left="1rem"
+            padding="0.2rem 0.1rem"
+            borderBottomRightRadius="5px"
+            borderRadius="1.2rem"
+            width="5rem"
+            height="1.7rem"
+            zIndex="10"
+          />
         </div>
       </Card>
       <CardMeta />
