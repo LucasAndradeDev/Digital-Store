@@ -2,10 +2,10 @@
 form {
     margin-right: 3rem;
     position: relative;
-    top: 1rem; /* Ajuste a posição da borda superior */
+    top: 1rem; 
 }
 
-/* Estilos para o container do filtro */
+
 .filter {
     background-color: rgb(255, 255, 255);
     padding: 3rem 1rem 3rem 2rem;
@@ -15,14 +15,13 @@ form {
     left: 1rem;
 }
 
-/* Estilos para o título do filtro */
 .filter h5 {
     margin: 0;
     position: absolute;
     top: 1rem;
 }
 
-/* Estilos para os checkboxes */
+
 .filter > form > div > input[type="checkbox"] {
     width: 20px;
     height: 20px;
@@ -31,17 +30,16 @@ form {
     accent-color: #c92071;
 }
 
-/* Estilos para seções do filtro */
+
 .opcfilter {
     padding-top: 2rem;
 }
 
-/* Estilos para checkboxes com borda arredondada */
+
 .esta {
     border-radius: 100%;
 }
 
-/* Adicione margin-bottom para espaçamento entre seções */
 .filter h6 {
     margin-bottom: 1rem;
 }
@@ -59,9 +57,9 @@ hr {
 }
 
 .filterRadio input[type="radio"] {
-    width: 20px; /* Ajuste o tamanho conforme necessário */
-    height: 20px; /* Ajuste o tamanho conforme necessário */
+    width: 20px; 
+    height: 20px; 
     margin-right: 10px;
     cursor: pointer;
-    accent-color: #c92071; /* Cor do rádio quando selecionado */
+    accent-color: #c92071; 
 }

@@ -1,4 +1,3 @@
-// Button.js
 import React from 'react';
 import "./Button.css";
 
@@ -27,6 +26,7 @@ function Button({
   right,
   bottom,
   zIndex,
+  onClick,
   ...rest
 }) {
   const buttonStyle = {
@@ -71,6 +71,7 @@ function Button({
         e.currentTarget.style.color = color;
         e.currentTarget.style.fontSize = fontSize;
       }}
+      onClick={onClick}
       {...rest}
     >
       {text}

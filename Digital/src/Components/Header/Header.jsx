@@ -1,11 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
 import SearchInput from "../SearchInput/SearchInput";
 import ShoppingCart from "../ShoppingCart/ShoppingCart";
 import Button from "../Button/Button";
 import Logo from "../Logo/Logo";
+import LoginPopupModal from "../LoginPopupModal/LoginPopupModal";
 import "./Header.css";
 
 function Header() {
+  const [showModal, setShowModal] = useState(false);
+
+  const handleOpenModal = () => {
+    setShowModal(true);
+  };
+
+  const handleCloseModal = () => {
+    setShowModal(false);
+  };
+
   return (
     <header className="page-header">
       <div className="header-top">
@@ -34,6 +45,7 @@ function Header() {
               underlineHeight="1px"
               underlineOffset="10px"
               underlinePosition="bottom"
+              onClick={handleOpenModal}
             />
             <Button
               text="Entrar"
@@ -46,12 +58,14 @@ function Header() {
               hoverColor="#a1004e"
               hoverFontColor="#ffffff"
               fontWeight="600"
+              onClick={handleOpenModal}
             />
           </div>
 
           <ShoppingCart />
         </div>
       </div>
+      <LoginPopupModal showModal={showModal} closeModal={handleCloseModal} />
     </header>
   );
 }

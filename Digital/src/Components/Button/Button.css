@@ -1,29 +1,28 @@
 .custom-button {
-    display: inline-block;
-    text-decoration: none;
-    color: inherit;
-    text-align: center;
-    position: relative; 
-    transition: background-color 0.3s, color 0.3s, font-size 0.3s;
-  }
-  
-  .custom-button:hover {
-    cursor: pointer;
-  }
-  
-  .custom-button.underline::after {
-    content: '';
-    position: absolute;
-    left: 50%; 
-    bottom: var(--underline-offset, -2px); 
-    width: var(--underline-width, 100%);
-    height: var(--underline-height, 2px);
-    background-color: currentColor; 
-    transform: translateX(-50%); 
-    transition: background-color 0.3s;
-  }
-  
-  .custom-button.underline:hover::after {
-    background-color: #000000; 
-  }
-  
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+  text-align: center;
+  position: relative; 
+  transition: background-color 0.3s, color 0.3s, font-size 0.3s;
+}
+
+.custom-button:hover {
+  cursor: pointer;
+}
+
+.custom-button.underline::after {
+  content: '';
+  position: absolute;
+  left: 50%; 
+  bottom: var(--underline-offset, -2px); 
+  width: var(--underline-width, 100%);
+  height: var(--underline-height, 2px);
+  background-color: currentColor; 
+  transform: translateX(-50%); 
+  transition: background-color 0.3s;
+}
+
+.custom-button.underline:hover::after {
+  background-color: #000000; 
+}
