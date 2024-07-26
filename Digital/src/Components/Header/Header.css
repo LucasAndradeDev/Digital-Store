@@ -1,6 +1,4 @@
-/* Header.css */
 
-/* Estilização do Header */
 .page-header {
     width: 100%;
     background-color: #ffffff;
@@ -9,15 +7,15 @@
     margin: 0;
 }
 
-/* Container para a parte superior do Header */
+
 .header-top {
     display: flex;
-    flex-direction: row; /* Garante que os itens fiquem em linha */
+    flex-direction: row; 
     align-items: center;
     justify-content: space-between;
     width: 100%;
     max-width: 1200px;
-    margin: 0 auto; /* Centraliza o container dentro do header */
+    margin: 0 auto; 
     box-sizing: border-box;
     position: relative;
     padding-top: 1rem;
@@ -41,12 +39,12 @@
     border: none;
     border-radius: 2rem;
     outline: none;
-    position: relative; /* Necessário para posicionar o pseudo-elemento */
+    position: relative; 
 }
 
 .first-button:hover {
     background-color: #ffffff;
-    text-decoration: none; /* Remove sublinhado padrão */
+    text-decoration: none;
     font-weight: 600;
 }
 
@@ -54,7 +52,7 @@
     content: "";
     position: absolute;
     left: 36px;
-    bottom: -2px; /* Ajusta a posição vertical do sublinhado */
+    bottom: -2px; 
     width: 55%;
     height: 3px; 
     background-color: transparent; 
@@ -62,21 +60,30 @@
 }
 
 .first-button:hover::after {
-    background-color: rgb(0, 0, 0); /* Cor do sublinhado ao passar o mouse */
+    background-color: rgb(0, 0, 0); 
 }
 
-/* Estilização da Logo */
 
-/* Container para ações do Header (Botões e Carrinho) */
 .header-actions {
     display: flex;
     align-items: center;
-    gap: 1rem; /* Espaçamento entre os itens */
+    gap: 1rem; 
     position: relative;
     right: 10rem;
 }
 
-/* Ajustes específicos para o SearchInput */
+
 .search-input {
-    margin-right: 2rem; /* Ajusta o espaçamento à direita do campo de pesquisa */
+    margin-right: 2rem; 
+}
+
+
+.header-btns{
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: flex-start;
+    position: relative;
+    right: 4rem;
+    gap: 0.5rem;
 }

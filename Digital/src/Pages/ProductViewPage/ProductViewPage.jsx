@@ -2,6 +2,7 @@ import React from "react";
 import Carousel from "../../Components/CarouselViewPage/CarouselViewPage";
 import ProductCard from "../../Components/ProductCard/ProductCard";
 import "./ProductViewPage.css";
+import Button from "../../Components/Button/Button";
 
 const ProductViewPage = () => (
   <div className="ProductViewPage">
@@ -16,13 +17,20 @@ const ProductViewPage = () => (
       </div>
       <div className="infos">
         <div className="product-header">
-          <h1>Tênis adidas Grand Court 2.0 - Feminino</h1>
-          <div className="product-price">
-            <span className="current-price">R$ 219,00</span>
-            <span className="original-price">R$ 219,00</span>
+          <h3 >Tênis Nike Revolution 6 Next Nature Masculino</h3>
+          <span className="infos-desc">Casual | Nike | REF: 38416711</span>
+          <div className="rating">
+            <span>☆</span>
+            <span>☆</span>
+            <span>☆</span>
+            <span>☆</span>
+            <span>☆</span>
           </div>
-          <div className="product-rating">
-            <span>★★★★☆</span> <span>(90 avaliações)</span>
+          <div className="product-price">
+            <span className="current-price">
+              R$ <span>219</span>,00
+            </span>
+            <span className="original-price">R$ 299,00</span>
           </div>
         </div>
         <div className="product-info">
@@ -32,41 +40,126 @@ const ProductViewPage = () => (
             eiusmod tempor incididunt ut labore et dolore magna aliqua...
           </p>
           <div className="product-sizes">
-            <label>Tamanho:</label>
-            <button>39</button>
-            <button>40</button>
-            <button>41</button>
-            <button>42</button>
-            <button>43</button>
+            <p>Tamanho</p>
+            <div className="product-btns">
+              <Button
+                text="39"
+                width="2.5rem"
+                height="2.6rem"
+                border="solid 1px #D8D8D8"
+                borderRadius="0.2rem"
+                backgroundColor="#ffffff"
+                fontWeight="600"
+                fontSize="0.95rem"
+                color="#000"
+                hoverColor="#c92071"
+                hoverFontColor="#ffffff"
+                hoverFontSize="1rem"
+              />
+              <Button
+                text="40"
+                width="2.5rem"
+                height="2.6rem"
+                border="solid 1px #D8D8D8"
+                borderRadius="0.2rem"
+                backgroundColor="#ffffff"
+                fontWeight="600"
+                fontSize="0.95rem"
+                color="#000"
+                hoverColor="#c92071"
+                hoverFontColor="#ffffff"
+                hoverFontSize="1rem"
+              />
+              <Button
+                text="41"
+                width="2.5rem"
+                height="2.6rem"
+                border="solid 1px #D8D8D8"
+                borderRadius="0.2rem"
+                backgroundColor="#ffffff"
+                fontWeight="600"
+                fontSize="0.95rem"
+                color="#000"
+                hoverColor="#c92071"
+                hoverFontColor="#ffffff"
+                hoverFontSize="1rem"
+              />
+              <Button
+                text="42"
+                width="2.5rem"
+                height="2.6rem"
+                border="solid 1px #D8D8D8"
+                borderRadius="0.2rem"
+                backgroundColor="#ffffff"
+                fontWeight="600"
+                fontSize="0.95rem"
+                color="#000"
+                hoverColor="#c92071"
+                hoverFontColor="#ffffff"
+                hoverFontSize="1rem"
+              />
+              <Button
+                text="43"
+                width="2.5rem"
+                height="2.6rem"
+                border="solid 1px #D8D8D8"
+                borderRadius="0.2rem"
+                backgroundColor="#ffffff"
+                fontWeight="600"
+                fontSize="0.95rem"
+                color="#000"
+                hoverColor="#c92071"
+                hoverFontColor="#ffffff"
+                hoverFontSize="1rem"
+              />
+            </div>
           </div>
           <div className="product-colors">
-            <label>Cor:</label>
-            <button
-              className="color-option"
-              style={{ backgroundColor: "#f00" }}
-            ></button>
-            <button
-              className="color-option"
-              style={{ backgroundColor: "#00f" }}
-            ></button>
-            <button
-              className="color-option"
-              style={{ backgroundColor: "#0f0" }}
-            ></button>
-            <button
-              className="color-option"
-              style={{ backgroundColor: "#ccc" }}
-            ></button>
+            <p>Cores</p>
+            <div>
+              <div className="product-color" style={{background: "#6eeeff"}}></div>
+              <div className="product-color" style={{background: "#ff6969"}}></div>
+              <div className="product-color" style={{background: "#5d5d5d"}}></div>
+              <div className="product-color" style={{background: "#6d70b7"}}></div>
+
+            </div>
+          </div>
+          <div className="btn-cmp">
+            <Button
+              text="COMPRAR"
+              backgroundColor="#ffb31f"
+              color="#ffffff"
+              width="12.5rem"
+              height="2.8rem"
+              borderRadius="0.5rem"
+              fontSize="1rem"
+              hoverColor="#ffb31f"
+              hoverFontColor="#ffffff"
+              fontWeight="600"
+              hoverFontSize="1.2rem"
+              outline="none"
+            />
           </div>
         </div>
-        <button className="buy-button">Comprar</button>
       </div>
     </main>
     <section className="related-products">
-      <h2>Produtos Relacionados</h2>
-      {Array.from({ length: 4 }).map((_, index) => (
-        <ProductCard key={index} width={250} height={270} showPromotionLabel={index < 2} />
-      ))}
+      <div className="VPText">
+        <h3>Produtos em alta</h3>
+        <p>
+          Ver todos <i className="fa-solid fa-arrow-right"></i>
+        </p>
+      </div>
+      <div className="VPCards">
+        {Array.from({ length: 4 }).map((_, index) => (
+          <ProductCard
+            key={index}
+            width={250}
+            height={270}
+            showPromotionLabel={index < 2}
+          />
+        ))}
+      </div>
     </section>
   </div>
 );

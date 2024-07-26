@@ -26,32 +26,33 @@ html, body {
     flex: 1;
     padding: 20px;
     display: flex;
-    align-items: center; /* Centraliza verticalmente o conteúdo */
-    justify-content: center; /* Centraliza horizontalmente o conteúdo */
+    align-items: center;
+    justify-content: center; 
 }
 
 .totalCard {
     display: flex;
     flex-direction: column; 
-    align-items: center; /* Centraliza o conteúdo horizontalmente */
-    width: 80%; /* Ajuste conforme necessário */
-    max-width: 1200px; /* Define uma largura máxima */
-    margin: 0 auto; /* Centraliza o totalCard horizontalmente */
+    align-items: center; 
+    width: 80%; 
+    max-width: 1200px; 
+    margin: 0 auto; 
 }
 
 .cardTitle {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
-    width: 95%; /* Corrigido para garantir que ocupe toda a largura disponível */
+    justify-content: space-around;
+    gap: 45rem;
+    width: 95%; 
     padding: 1rem;
     box-sizing: border-box;
-    margin-bottom: 1rem; /* Adicionado para separar o título do conteúdo */
+    margin-bottom: 1rem; 
 }
 
 .cardTitle h3 {
-    margin: 0; /* Remove margens para garantir o alinhamento correto */
+    margin: 0; 
     position: relative;
     bottom: 0,5rem;
 }
@@ -64,15 +65,15 @@ html, body {
 .HomePage-CardContent {
     display: flex;
     flex-wrap: wrap;
-    gap: 1.5rem; /* Reduzido para melhor visualização em telas menores */
+    gap: 1.5rem; 
     width: 1200px;
     padding: 1rem;
     box-sizing: border-box;
     align-items: center;
-    justify-content: center; /* Centraliza o conteúdo dentro de cardContent */
+    justify-content: center; 
 }
 
-/* Media Queries para Responsividade */
+
 
 @media (max-width: 1200px) {
     .totalCard {
@@ -86,23 +87,23 @@ html, body {
 
 @media (max-width: 768px) {
     .cardTitle {
-        align-items: flex-start; /* Alinha o conteúdo ao início em telas menores */
+        align-items: flex-start;
         padding: 0.5rem;
-        margin-bottom: 0.5rem; /* Adicionado para ajustar o espaço abaixo do título */
+        margin-bottom: 0.5rem; 
         width: 65%;
     }
 
     .cardTitle h3 {
-        font-size: 1.5rem; /* Ajusta o tamanho da fonte em telas menores */
+        font-size: 1.5rem; 
     }
 
     .cardTitle p {
-        font-size: 0.9rem; /* Ajusta o tamanho da fonte em telas menores */
+        font-size: 0.9rem; 
     }
 
     .HomePage-CardContent {
         padding: 0.5rem;
-        gap: 1rem; /* Ajusta o espaço entre os cards em telas menores */
+        gap: 1rem; 
     }
 }
 
@@ -112,14 +113,14 @@ html, body {
     }
 
     .cardTitle h3 {
-        font-size: 1.2rem; /* Ajusta o tamanho da fonte em telas muito pequenas */
+        font-size: 1.2rem; 
     }
 
     .cardTitle p {
-        font-size: 0.8rem; /* Ajusta o tamanho da fonte em telas muito pequenas */
+        font-size: 0.8rem; 
     }
 
     .HomePage-CardContent {
-        gap: 0.75rem; /* Ajusta o espaço entre os cards em telas muito pequenas */
+        gap: 0.75rem; 
     }
 }

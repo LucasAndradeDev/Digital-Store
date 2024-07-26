@@ -1,5 +1,5 @@
 import React from 'react';
-import './CardMeta.css'; // Certifique-se de importar o CSS corretamente
+import './CardMeta.css'; 
 
 function CardMeta() {
   return (

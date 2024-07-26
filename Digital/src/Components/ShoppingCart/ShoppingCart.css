@@ -1,21 +1,27 @@
-
-
 .shoppingCart {
     position: relative;
     display: flex;
     align-items: center;
+    cursor: pointer;
 }
 
 .shoppingCartIcon {
-    width: 40px; /* Ajuste conforme necessário */
+    width: 40px;
     height: auto;
 }
 
 .cartCount {
     position: absolute;
-    bottom: 0.9rem;
-    left: 1.6rem;
+    bottom: 0.95rem;
     color: white;
     font-weight: 700;
+    font-size: 0.8rem;
 }
-    
+
+.count-small {
+    left: 1.65rem; 
+}
+
+.count-large {
+    left: 1.4rem; 
+}

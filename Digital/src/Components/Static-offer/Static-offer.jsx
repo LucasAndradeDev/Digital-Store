@@ -13,14 +13,13 @@ function StaticOffer() {
 
       <div className="StaticOffer-text">
         <p className="ofert">Oferta Especial</p>
-        <h3>Lorem ipsum dolor sit.</h3>
+        <h3>Air Jordan edição de 
+        colecionador</h3>
         <p className="text">
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum
           blanditiis accusamus nobis numquam non earum quod corrupti. Pariatur,
           consequatur dolores. Lorem ipsum dolor sit, amet consectetur
-          adipisicing elit. Harum, velit illo. Eos pariatur similique,
-          repudiandae incidunt nam quos, provident, quod necessitatibus ea
-          reprehenderit porro soluta quis! Dicta accusantium eaque sit.
+          adipisicing elit. Harum, velit illo.
         </p>
         <div className="StaticOffer-Button">
         <Button
@@ -34,8 +33,8 @@ function StaticOffer() {
             fontSize="0.95rem"
             color="rgb(255, 255, 255)"
             position="absolute"
-            top="17rem"
-            right="21.5rem"
+            top="17.5rem"
+            leftt="30rem"
             zIndex="1"
             hoverColor="#ffffff"
             hoverFontColor="#c92071"

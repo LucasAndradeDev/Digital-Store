@@ -2,12 +2,13 @@ import React from 'react';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import './CarouselViewPage.css';
-import tenisViewPage from '../../assets/tenisViewPage.svg';
 import AmareloVP from '../../assets/ViewPageAmarelo.svg';
 import CinzaVP from '../../assets/ViewPageCinza.svg';
 import LilasVP from '../../assets/ViewPageLilas.svg';
 import RosaVP from '../../assets/ViewPageRosa.svg';
 import MarromVP from '../../assets/ViewPageMarrom.svg';
+import TenisImg from '../TenisImg/TenisImg'; 
+import tenisViewPage from '../../assets/tenisViewPage.svg';
 
 const images = [
   AmareloVP,
@@ -32,10 +33,19 @@ const CarouselComponent = () => {
         {images.map((image, index) => (
           <div key={index} className="carousel-slide">
             <img src={image} alt={`Slide ${index}`} className="background-image" />
-            <img src={tenisViewPage} alt="Tenis" className="foreground-image" />
+            <TenisImg
+              src={tenisViewPage}
+              height="48%"
+              angle="0"
+              top="15rem"
+              left="56rem"
+              alt="Tenis"
+              className="tenis-img" // Adicione a classe aqui
+            />
           </div>
         ))}
       </Carousel>
+    
     </div>
   );
 };

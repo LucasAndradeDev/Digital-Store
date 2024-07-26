@@ -13,7 +13,7 @@ const TenisImg = ({ src, height, angle, top, left, alt }) => {
         transform: `translate(-50%, -50%) rotate(${angle || '0'}deg)`,
         top: top || '50%',
         left: left || '50%',
-        position: 'absolute' // Adiciona a posição absoluta
+        position: 'absolute' 
       }} 
     />
   );

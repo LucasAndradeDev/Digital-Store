@@ -1,5 +1,5 @@
 import React from 'react';
-import './CardContent.css'; // Arquivo CSS com a classe .cardContent
+import './CardContent.css'; 
 
 const CardContent = ({ children }) => {
   return (

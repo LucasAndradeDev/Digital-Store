@@ -1,40 +1,70 @@
 #carouselExampleIndicators {
   position: relative;
+  margin: 0 auto;
   bottom: 2.5rem;
   width: 85rem;
-  left: 2rem;
 }
 
 li::marker {
   font-size: 0;
 }
 
+.carousel-indicators li {
+  background-color: #fff;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  margin: 5px;
+}
+
+.carousel-indicators .active {
+  background-color: #000; 
+}
+
 .carousel-caption {
   position: absolute;
-  bottom: 20px;
-  left: 15px;
-  right: 15px;
+  top: 10rem;
+  left: 10rem;
   padding: 20px;
-  color: #fff; /* Cor do texto */
+  color: #fff;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
-.carousel-caption h5 {
-  font-size: 1.5rem;
-  margin-bottom: 0.5rem;
+.carousel-caption h3 {
+  font-size: 4rem;
+  text-align: left;
+  position: absolute;
+  right: 34rem;
+  width: 32rem;
+  font-weight: 700;
 }
 
-.carousel-caption p {
-  font-size: 1rem;
+.carousel-caption .titulo-carousel {
+  font-size: 1.1rem;
+  color: #f6aa1c;
+  position: relative;
+  bottom: 2rem;
+  right: 28rem;
+}
+
+.carousel-caption .desc-carousel {
+  text-align: left;
+  position: relative;
+  font-size: 1.1rem;
+  top: 7rem;
+  right: 7.5rem;
 }
 
 .carousel-item {
-  height: 650px; /* Altura fixa para todos os slides */
+  height: 650px;
   position: relative;
 }
 
 .carousel-item .background-image {
-  max-height: 100%; /* Garante que as imagens de fundo não excedam a altura do slide */
+  max-height: 100%; 
 }
 
 .foreground-image {
@@ -42,8 +72,14 @@ li::marker {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  height: 10%; /* Reduz a altura da imagem do tênis */
-  max-height: 100%; /* Garante que a imagem não exceda a altura do slide */
-  z-index: 10; /* Define a camada superior */
-  pointer-events: none; /* Garante que a imagem do tênis não interfira na interação com o carrossel */
+  height: 10%; 
+  max-height: 100%; 
+  z-index: 10; 
+  pointer-events: none; 
+}
+
+
+.carousel-indicators{
+  display: flex;
+  gap: 0.5rem;
 }

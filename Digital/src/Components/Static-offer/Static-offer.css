@@ -8,8 +8,9 @@
     margin-bottom: 3rem;
     align-items: center;
     background-color: white;
-    width: 88rem;
+    width: 100%;
     top: 4.2rem;
+    padding-bottom: 2rem;
 }
 
 /* Estilo da imagem StaticOffer */
@@ -43,12 +44,16 @@
 /* Estilo do texto StaticOffer */
 .StaticOffer-text {
     position: relative;
-    width: 38%;
+    width: 22%;
+}
+
+.StaticOffer-text h3{
+    font-weight: 700;
 }
 
 .StaticOffer-text .ofert {
     color: #c92072c9;
-    font-weight: 700;
+    font-weight: 800;
 }
 
 .StaticOffer-text .text {
